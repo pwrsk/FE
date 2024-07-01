@@ -257,7 +257,7 @@ game.Players.PlayerAdded:Connect(function(newplr)
                     --// Tracer:
                     if Tracers then
                         local trace = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(0, -Size.Y, 0)).p)
-                        lines.Tracer.From = Vector2.new(camera.ViewportSize.X/2, camera.ViewportSize.Y)
+                        lines.Tracer.From = Vector2.new(camera.ViewportSize.X/2, camera.ViewportSize.Y/200)
                         lines.Tracer.To = Vector2.new(trace.X, trace.Y)
                     end
 
